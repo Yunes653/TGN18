@@ -1,0 +1,50 @@
+let questionsB = [
+    {
+        question: "¿Pregunta 1 del test del carnet B?",
+        answers: ["Respuesta 1", "Respuesta 2", "Respuesta 3", "Respuesta 4"],
+        correct: 0
+    },
+    // Añadir más preguntas aquí
+];
+
+let questionsA1 = [
+    {
+        question: "¿Pregunta 1 del test del carnet A1?",
+        answers: ["Respuesta 1", "Respuesta 2", "Respuesta 3", "Respuesta 4"],
+        correct: 0
+    },
+    // Añadir más preguntas aquí
+];
+
+function loadTest(testType) {
+    let testContainer = document.getElementById('test-container');
+    let questionElement = document.getElementById('question');
+    let questions = testType === 'B' ? questionsB : questionsA1;
+
+    let currentQuestion = 0;
+
+    function showQuestion() {
+        questionElement.textContent = questions[currentQuestion].question;
+        let buttons = testContainer.getElementsByTagName('button');
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].textContent = questions[currentQuestion].answers[i];
+            buttons[i].onclick = () => answerQuestion(i === questions[currentQuestion].correct);
+        }
+    }
+
+    function answerQuestion(isCorrect) {
+        alert(isCorrect ? "Correcto!" : "Incorrecto, intenta de nuevo.");
+        currentQuestion = (currentQuestion + 1) % questions.length;
+        showQuestion();
+    }
+
+    showQuestion();
+}
+
+window.onload = () => {
+    if (document.getElementById('test_b')) {
+        loadTest('B');
+    } else if (document.getElementById('test_a1')) {
+        loadTest('A1');
+    }
+};
