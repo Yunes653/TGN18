@@ -30,3 +30,152 @@
     </footer>
 </body>
 </html>
+test_b.html
+
+html
+Copiar código
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Carnet B</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Autoescuela XYZ</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre nosotros</a></li>
+                <li><a href="test_b.html">Test Carnet B</a></li>
+                <li><a href="test_a1.html">Test Carnet A1</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="test_b">
+            <h2>Test Carnet B</h2>
+            <div id="test-container">
+                <p id="question">Pregunta</p>
+                <button onclick="answerQuestion(true)">Respuesta 1</button>
+                <button onclick="answerQuestion(false)">Respuesta 2</button>
+                <button onclick="answerQuestion(false)">Respuesta 3</button>
+                <button onclick="answerQuestion(false)">Respuesta 4</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Autoescuela XYZ</p>
+    </footer>
+</body>
+</html>
+test_a1.html
+
+html
+Copiar código
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Carnet A1</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Autoescuela XYZ</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre nosotros</a></li>
+                <li><a href="test_b.html">Test Carnet B</a></li>
+                <li><a href="test_a1.html">Test Carnet A1</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="test_a1">
+            <h2>Test Carnet A1</h2>
+            <div id="test-container">
+                <p id="question">Pregunta</p>
+                <button onclick="answerQuestion(true)">Respuesta 1</button>
+                <button onclick="answerQuestion(false)">Respuesta 2</button>
+                <button onclick="answerQuestion(false)">Respuesta 3</button>
+                <button onclick="answerQuestion(false)">Respuesta 4</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Autoescuela XYZ</p>
+    </footer>
+</body>
+</html>
+contact.html
+
+html
+Copiar código
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Autoescuela XYZ</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre nosotros</a></li>
+                <li><a href="test_b.html">Test Carnet B</a></li>
+                <li><a href="test_a1.html">Test Carnet A1</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Autoescuela XYZ</p>
+    </footer>
+</body>
+</html>
+5. Subir los archivos al repositorio de GitHub
+Ve a tu repositorio en GitHub.
+Sube los archivos index.html, about.html, test_b.html, test_a1.html, contact.html, styles.css, y scripts.js.
+6. Añadir el contenido del CSS y JavaScript
+styles.css
+
+css
+Copiar código
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
